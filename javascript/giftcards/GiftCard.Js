@@ -1,47 +1,5 @@
 function initAll(){
 
-//     //This variable hold the display area
-//     var dataDisplay = document.getElementById("displayform");
-//     //On clicking radial buttons calls getTextFile# function
-//     document.getElementById("GiftCardRadio").onclick = getGiftCard;
-//     document.getElementById("EGiftCardRadio").onclick = getGiftCardOnline;
-   
-
-// //FUNCTION FOR TEXT FILE 1
-//     function getGiftCard(){//Retrieve the getTextFile1.
-//             var xhr = new XMLHttpRequest();
-//         //function that listens for ready state changes
-//             xhr.onreadystatechange = function(){
-//                 if (xhr.readyState === 4 ) {
-//                     if (xhr.status === 200) {
-//                         dataDisplay.innerHTML = xhr.responseText; 
-//                     } else {
-//                         alert("No Bueno Connection");
-//                     }
-//                 }
-//             }
-//             xhr.open("GET","giftcard.txt",true);
-//             xhr.send(null);
-//     }//end getTextFile1
-
-// //FUNCTION FOR TEXT FILE 2
-//     function getGiftCardOnline(){//Retrieve the getTextFile2.
-//         var xhr = new XMLHttpRequest();
-//     //function that listens for ready state changes
-//         xhr.onreadystatechange = function(){
-//             if (xhr.readyState === 4 ) {
-//                 if (xhr.status === 200) {
-//                     dataDisplay.innerHTML = xhr.responseText; 
-//                 } else {
-//                     alert("No Bueno Connection");
-//                 }
-//             }
-//         }
-//         xhr.open("GET","giftcardOnline.txt",true);
-//         xhr.send(null);
-//     }//end getTextFile2
- 
-
 // // Form Handles that references the id of the form
 var formHandle = document.forms.myFormSpot;
 //console.log(formHandle);
