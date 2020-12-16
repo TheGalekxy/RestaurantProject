@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="/javascript/jquery-3.5.1.js"></script>
+        <title>Careers</title>
+        <meta name="Careers" content="Find a new Career">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="/javascript/careers/careers.js"></script>
+        <link rel="stylesheet" href="/css/Careers/careers.css" />
+        <meta charset="utf-8" />
+    </head>
+    <body>
+
+        <!-- HEADER -->
+    <header id="header">
+        <div class="page-wrapper">
+        
+        
+            <!-- SLOGAN -->
+            <div id="header-logo">
+                <h2 class="hidden">Company Logo</h2>
+                <a href="/index.html">
+                    <img id="logo" src="/resources/Images/Shared/taj-mahal-full.png">
+                </a>
+            </div>
+            
+            <!-- MAIN NAVIGATION with SIGN IN BUTTON-->
+            
+            <nav id="main-menu">
+                <h3 class="hidden">Main navigation</h3>
+                <ul >
+
+                    <li class="dropdown"><a href="/index.html">Home</a></li>
+
+                    <li class="dropdown"><a href="/pages/aboutus.html">About</a>
+                        <ul class="dropdown-content">
+                            <li class="drop-link"><a href="/pages/aboutus.html">Who we are</a></li>
+                            <li class="drop-link"><a href="/pages/contact.html">Contact</a></li>
+                            <li class="drop-link"><a href="/pages/locations.html">Location</a></li>
+                            <li class="drop-link"><a href="/pages/careers.html">Careers</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="/pages/menu.html">Dining Experience</a>
+                        <ul class="dropdown-content">
+                        <li class="drop-link"><a href="/pages/menu.html">Menu</a></li>
+                        <li class="drop-link"><a href="/pages/specials.html">Weekly Specials</a></li>
+                        <li class="drop-link"><a href="/pages/events.html">Events Booking</a></li>
+                        <li class="drop-link"><a href="/pages/GiftCards.html">Gift Cards</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"><a href="/pages/sitemap.html">Site Map</a></li>
+                    <li class="dropdown"><a href="/pages/contest.html">Contests</a></li>
+
+                </ul>
+            </nav>
+            
+        </div>
+    </header>
+
+    <main>
+        <div class="page-wrapper">
+            
+
+            <form id="careersform" name="careersform">
+                <h2 id="gc-h3">Join Our Team!</h2>
+                <span id="resume_msg"></span>
+                <label for="myFile"> Add your resume here:</label><br>
+                <input type="file" id="myFile" name="myFile"><br>
+
+            <div><span id="nameFrom"></span><br>
+                <input type="text" id="FromFirstName" name="From_First_Name" placeholder="First Name">
+                <input type="text" id="FromLastName" name="From_Last_Name" placeholder="Last Name">
+            </div>
+            
+            <div>
+                <span id="email_msg"></span><br>
+                <input type="text" id="email" name="email" placeholder="Email">
+            </div> 
+            <div>
+                <span id="phone"></span><br>
+                <input type="text" id="phonenumber" name="phonenumber" placeholder="Phone Number">
+            </div> <br>
+             <h4>Availability:</h>   
+                <span id="Availability_Span"></span>
+            <table style="width:100%" id="myTable">
+                <tr>
+                  <th></th>
+                  <th>Monday</th>
+                  <th>Tuesday</th>
+                  <th>Wednesday</th>
+                  <th>Thursday</th>
+                  <th>Friday</th>
+                  <th>Saturday</th>
+                  <th>Sunday</th>
+
+                </tr>
+                <tr>
+                  <th>Morning</th>
+                  <td><input type="checkbox" id="checkboxBtnMor1" name="checkboxBtnMor1"></td>
+                  <td><input type="checkbox" id="checkboxBtnMor2" name="checkboxBtnMor2"></td>
+                  <td><input type="checkbox" id="checkboxBtnMor3" name="checkboxBtnMor3"></td>
+                  <td><input type="checkbox" id="checkboxBtnMor4" name="checkboxBtnMor4"></td>
+                  <td><input type="checkbox" id="checkboxBtnMor5" name="checkboxBtnMor5"></td>
+                  <td><input type="checkbox" id="checkboxBtnMor6" name="checkboxBtnMor6"></td>
+                  <td><input type="checkbox" id="checkboxBtnMor7" name="checkboxBtnMor7"></td>
+                </tr>
+                <tr>
+                    <th>Afternoon</th>
+                  <td><input type="checkbox" id="checkboxBtnAft1" name="checkboxBtnAft1"></td>
+                  <td><input type="checkbox" id="checkboxBtnAft2" name="checkboxBtnAft2"></td>
+                  <td><input type="checkbox" id="checkboxBtnAft3" name="checkboxBtnAft3"></td>
+                  <td><input type="checkbox" id="checkboxBtnAft4" name="checkboxBtnAft4"></td>
+                  <td><input type="checkbox" id="checkboxBtnAft5" name="checkboxBtnAft5"></td>
+                  <td><input type="checkbox" id="checkboxBtnAft6" name="checkboxBtnAft6"></td>
+                  <td><input type="checkbox" id="checkboxBtnAft7" name="checkboxBtnAft7"></td>
+                </tr>
+                <tr>
+                    <th>Evening</th>
+                  <td><input type="checkbox" id="checkboxBtnEve1" name="checkboxBtnEve1"></td>
+                  <td><input type="checkbox" id="checkboxBtnEve2" name="checkboxBtnEve2"></td>
+                  <td><input type="checkbox" id="checkboxBtnEve3" name="checkboxBtnEve3"></td>
+                  <td><input type="checkbox" id="checkboxBtnEve4" name="checkboxBtnEve4"></td>
+                  <td><input type="checkbox" id="checkboxBtnEve5" name="checkboxBtnEve5"></td>
+                  <td><input type="checkbox" id="checkboxBtnEve6" name="checkboxBtnEve6"></td>
+                  <td><input type="checkbox" id="checkboxBtnEve7" name="checkboxBtnEve7"></td>
+                </tr>
+              </table>
+              
+
+
+                <input type="submit" id="submitBtn">
+            </form>
+        </div>
+    </main>
+
+         
+        
+         <!-- FOOTER -->
+        <footer>
+            <div class="page-wrapper">
+            <h2 class="hidden">Footer navigation</h2>
+            <p>&copy; Copyright Taj Mahal Restaurant, Toronto, Canada. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+
+</html>

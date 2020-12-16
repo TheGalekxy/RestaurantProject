@@ -1,0 +1,255 @@
+/* Part of the css code for drop down menu had been adopted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover */
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@300&family=Ubuntu&display=swap');
+
+/* 1. GENERAL STYLES/SETUP */
+html {
+    box-sizing:border-box;
+}
+*, *::before, *::after {
+    box-sizing:inherit;
+}
+
+
+/* The default font type is Karma. For headings we use 'Ubuntu'*/
+body {
+    margin:0;
+    font-family: 'Karma', serif;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.2;
+    background-color:#f5ffff;
+}
+
+.page-wrapper {
+    max-width:1200px;
+    margin:0 auto;
+    position:relative;
+}
+
+.hidden {
+    position:absolute;
+    left:-10000px;
+    width:1px;
+    height:1px;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family:'Ubuntu', sans-serif;
+    color:#611a02;
+}
+
+p {
+    font-size:1.3em;
+    color: #220e00;
+}
+
+/* 2. HEADER  AND DROP DOWN MENU*/
+#header {
+    background-color:#7e1011;
+}
+
+#header .page-wrapper {
+    padding: 1em 0em;
+}
+
+#header-logo {
+    display: inline;
+}
+
+#header-logo img {
+    width:10%;
+}
+
+#main-menu {
+    font-family: 'Ubuntu', sans-serif;
+    text-transform:uppercase;
+    position:absolute;
+    right:1em;
+    top:3em;
+}
+
+#main-menu .menu {
+  margin:0;
+  padding:0;
+}
+
+#main-menu li {
+  list-style-type:none;
+}
+
+#main-menu a {
+    color:#ffc640;
+    text-decoration:none;
+}
+
+#main-menu a:hover {
+    color:#ead489;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-left: 2em;
+    font-size: 1.4em;
+}
+
+.dropdown-content {
+
+    display: none;
+    position: absolute;
+    background-color: #C44012;
+    min-width: 175px;
+    box-shadow: 0px 8px 2px 0px rgba(0,0,0,0.2);
+    /*An element with z-index is always in front of an element with a lower z-index.*/
+    z-index: 1;
+    padding-inline-start: 5px;
+
+}
+
+.dropdown-content a {
+    padding: 0px 0px;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #D57A66;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.drop-link {
+    display: block;
+    padding-left: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 19px;
+}
+
+/* Add your CSS code here */
+
+main {
+  min-height: 72.5vh;
+}
+
+/* MENU CSS STARTS HERE */
+
+#menuTitle {
+  text-align: center;
+  font-family:'Ubuntu', sans-serif;
+  color:#611a02;
+}
+.container {
+  margin: auto;
+  width: 50%;
+}
+
+.menuHeader {
+  text-align: center;
+}
+
+.menuContainer {
+  text-align: center;
+}
+
+
+/* MENU STYLE */
+
+.menu {
+  /* overflow: hidden; */
+  overflow: scroll;
+  border: 1px solid #000;
+  background-color: #220e00;
+  max-height: 50vh;
+}
+
+/* Menu Button */
+.menu button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-family: 'Karma', serif;
+  color: white;
+}
+
+/* Menu Button HOVER */
+.menu button:hover {
+  background-color: #fee598;
+  color:#000;
+}
+
+/* Menu Button ACTIVE */
+.menu button.active {
+  background-color: #fee598;
+  color:#000;
+}
+
+/* MENU CONTENT STYLE */
+.menucontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #000;
+  border-top: none;
+  background-color: #fee598;
+  font-family: 'Karma', serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* MENU CSS ENDS HERE */
+/* ABOUT US CSS STARTS HERE */
+
+#aboutTitle {
+  font-family:'Ubuntu', sans-serif;
+  color:#611a02;
+  text-align: center;
+}
+
+.aboutContainer{
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+/* ABOUT HEADERS */
+.aboutHeader {
+  text-align: center;
+}
+
+#aboutText {
+  text-align: center;
+  padding: 5px;
+  font-family: 'Karma', serif;
+}
+
+.photoContainer {
+  height: 100%;
+  width: auto;
+}
+
+.aboutInfo {
+  text-align:center;
+}
+
+.aboutPhoto{
+  height: 100%;
+  width: 100%;
+}
+
+/* FOOTER */
+footer {
+    background-color: #7e1011;
+    /* margin-bottom: 2em; */
+}
+
+footer .page-wrapper {
+    padding: 1em 0em;
+}
+
+footer p {
+    font-size: 1.5em;
+    color:#ffc640;
+}

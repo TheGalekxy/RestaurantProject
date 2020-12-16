@@ -1,0 +1,309 @@
+/* Part of the css code for drop down menu had been adopted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover */
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@300&family=Ubuntu&display=swap');
+
+/* 1. GENERAL STYLES/SETUP */
+html {
+    box-sizing:border-box;
+}
+*, *::before, *::after {
+    box-sizing:inherit;
+}
+
+/* The default font type is Karma. For headings we use 'Ubuntu'*/
+body {
+    margin:0;
+    font-family: 'Karma', serif;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.2;
+    background-color:#f5ffff;
+}
+
+.page-wrapper {
+    max-width:1200px;
+    margin:0 auto;
+    position:relative;
+}
+
+.hidden {
+    position:absolute;
+    left:-10000px;
+    width:1px;
+    height:1px;
+}
+
+h2, h3, h4, h5, h6, legend {
+    font-family:'Ubuntu', sans-serif;
+    color:#611a02; 
+}
+
+p {
+    font-size:1.3em;
+    color: #220e00;
+}
+
+/* 2. HEADER  AND DROP DOWN MENU*/
+#header {
+    background-color:#7e1011;
+}
+
+#header .page-wrapper {
+    padding: 1em 0em;
+}
+
+#header-logo {
+    display: inline;
+}
+
+#header-logo img {
+    width:10%;
+}
+
+#main-menu {
+    font-family: 'Ubuntu', sans-serif;
+    text-transform:uppercase;
+    position:absolute;
+    right:1em;
+    top:3em;
+}
+
+#main-menu .menu {
+  margin:0;
+  padding:0;
+}
+
+#main-menu li {  
+  list-style-type:none;
+}
+
+#main-menu a {
+    color:#ffc640;
+    text-decoration:none;
+}
+
+#main-menu a:hover {
+    color:#ead489;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-left: 2em;
+    font-size: 1.4em;
+}
+
+.dropdown-content {
+    
+    display: none;
+    position: absolute;
+    background-color: #C44012;
+    min-width: 175px;
+    box-shadow: 0px 8px 2px 0px rgba(0,0,0,0.2);
+    /*An element with z-index is always in front of an element with a lower z-index.*/
+    z-index: 1; 
+    padding-inline-start: 5px;
+
+}
+
+.dropdown-content a {
+    padding: 0px 0px;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #D57A66;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.drop-link {
+    display: block;
+    padding-left: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 19px;
+}
+
+
+/* Banner on the Home Page */
+#banner {
+    position:relative;
+}
+
+.banner-content {
+    position:absolute;
+    top:0em;
+    width:100%;
+}
+
+
+.banner-title {   
+    color:#d1f313de;
+    margin:0;
+    font-size:2.75em;
+    text-shadow: 4px 4px #d56418;
+    text-transform:uppercase;
+    padding-top:0.15em;
+    padding-left:0.75em;
+}
+
+.banner-img img {
+  display:block;
+  margin:0 auto;
+  max-width:100%; 
+  height:auto;
+}
+
+
+.row {
+  clear:both; /* make sure nothing ever floats next to .row */
+}
+
+.img-links-heading {
+    margin:0;
+    padding-top:20px;
+    padding-bottom:10px;
+    text-align: center;
+    display:block;  
+    font-size:2em;
+    text-transform:uppercase;
+    text-align: center;
+
+}
+
+.col-33 {
+  width:33%; 
+  float:left;
+    padding-bottom:1em;
+}
+
+.col-33:last-child {
+width:34%;
+  padding-right:0; 
+}
+
+
+.three-imgs {
+    text-align: center;
+    font-size:1.2em;
+}
+
+.three-imgs img {
+    width:25%;
+}
+
+.col-33 h3 {
+    text-align: center;
+    font-size:1.5em;
+    text-decoration-style: solid;
+    text-decoration-line: underline;
+    text-decoration-color: #9f9a25;
+}
+
+
+.content {
+    border-top-style: solid;
+    border-color: #f6c44f;
+    border-width: 3px;   
+}
+
+.content h2 {
+    text-align: center;
+    display:block;  
+    font-size:1.5em;
+    text-transform:uppercase;
+    text-align: center;
+}
+
+/* CONTACT US WEB PAGE */
+#contactUs {
+    background: #ffc640;
+    padding: 20px 20px;
+}
+
+#contacticon {
+    width:150px;
+    float:right;
+    padding-top: 10px;
+}
+
+legend {
+    font-size: 1.5em;
+}
+
+fieldset {
+    border-color: #e28550;
+    border-style: solid;
+}
+
+form {
+    margin: 10px 0px;
+}
+
+input {
+    font-size:1em;
+    font-family: 'Karma', serif;
+    height:35px;
+}
+
+#in_Msg {
+    height:150px;
+}
+
+label {
+    width:70px;
+}
+
+#in_Name {
+    margin-left: 75px;
+}
+
+#in_Email {
+    margin-left: 48px;
+}
+
+#in_Tel {
+    margin-left: 3px;
+}
+
+#in_Msg {
+    margin-left: 105px;
+}
+
+#listSubmit {
+    float: left;
+    width:100%;
+}
+
+#button {
+    font-size: 1.1em;
+    background-color: #386C0B;
+    color:#FAFF70;
+    height:50px;
+    padding: 0.3em 0.5em;
+    border-color: #BAAB68;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    border:solid; 
+    display: block;
+    margin-left:340px;
+}
+
+.error {
+    color:#F05D23;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    background-color: #7e1011;
+    /* margin-bottom: 2em; */
+}
+
+footer .page-wrapper {
+    padding: 1em 0em;
+}
+
+footer p {
+    font-size: 1.5em;
+    color:#ffc640;
+}

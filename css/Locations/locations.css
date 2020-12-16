@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@300&family=Ubuntu&display=swap');
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#map
+{
+    height: 400px !important;
+    width: 800px !important;
+    margin-bottom: 1%;
+}
+form {
+  margin-bottom: 1%;
+}
+aside {
+  display: none;
+  float: right;
+}
+
+main {
+  min-height: 74.8vh;
+}

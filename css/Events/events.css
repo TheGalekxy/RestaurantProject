@@ -1,0 +1,295 @@
+/* Part of the css code for drop down menu had been adopted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover */
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@300&family=Ubuntu&display=swap');
+
+/* 1. GENERAL STYLES/SETUP */
+html {
+    box-sizing:border-box;
+    height: 100%;
+}
+*, *::before, *::after {
+    box-sizing:inherit;
+}
+
+/* The default font type is Karma. For headings we use 'Ubuntu'*/
+body {
+    margin:0;
+    font-family: 'Karma', serif;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.2;
+    background-color:#f5ffff;
+}
+
+.page-wrapper {
+    max-width:1200px;
+    margin:0 auto;
+    position:relative;
+}
+
+.hidden {
+    position:absolute;
+    left:-10000px;
+    width:1px;
+    height:1px;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family:'Ubuntu', sans-serif;
+    color:#611a02; 
+}
+
+p {
+    font-size:1.3em;
+    color: #220e00;
+}
+
+/* 2. HEADER  AND DROP DOWN MENU*/
+#header {
+    background-color:#7e1011;
+}
+
+#header .page-wrapper {
+    padding: 1em 0em;
+}
+
+#header-logo {
+    display: inline;
+}
+
+#header-logo img {
+    width:10%;
+    margin: 0;
+}
+
+#main-menu {
+    font-family: 'Ubuntu', sans-serif;
+    text-transform:uppercase;
+    position:absolute;
+    right:1em;
+    top:3em;
+}
+
+#main-menu .menu {
+  margin:0;
+  padding:0;
+}
+
+#main-menu li {  
+  list-style-type:none;
+}
+
+#main-menu a {
+    color:#ffc640;
+    text-decoration:none;
+}
+
+#main-menu a:hover {
+    color:#ead489;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-left: 2em;
+    font-size: 1.4em;
+}
+
+.dropdown-content {
+    
+    display: none;
+    position: absolute;
+    background-color: #C44012;
+    min-width: 175px;
+    box-shadow: 0px 8px 2px 0px rgba(0,0,0,0.2);
+    /*An element with z-index is always in front of an element with a lower z-index.*/
+    z-index: 1; 
+    padding-inline-start: 5px;
+
+}
+
+.dropdown-content a {
+    padding: 0px 0px;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #D57A66;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.drop-link {
+    display: block;
+    padding-left: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 19px;
+}
+
+/* Add your CSS code here */
+
+main {
+    min-height: 170vh;
+}
+
+#thanks_msg {
+    display: none;
+    border: 1px solid black;
+    text-align: center;
+    width: 50%;
+    margin: 2vh auto;
+}
+
+.container {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+    width: 50%;
+    margin: 2vh auto;
+    
+  }
+
+/* Clear floats after containers */
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+  .container img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 90px;
+  }
+
+  /* Increase the font-size of a span element */
+  .container span {
+    font-size: 20px;
+    margin-left: 15px;
+  }
+  
+  /* Add media queries for responsiveness. This will center both the text and the image inside the container */
+  @media (max-width: 500px) {
+    .container {
+      text-align: center;
+    }
+  
+    .container img {
+      margin: auto;
+      float: none;
+      display: block;
+    }
+  }
+
+h1, h3, p {
+    text-align: center;
+}
+
+.images{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+}
+
+img{
+    height: auto;
+    width: 30%;
+    margin: 0.5em 1em;
+}
+
+h1 {
+    margin-top: 10vh;
+    font-size: 4em;
+    color: #611a02;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h2 {
+    color: #611a02;
+    font-size: 4em;
+    font-family: 'Karma', serif;
+    margin: 2%;
+    text-align: center;
+}
+
+p{
+    color: #220e00;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 2% auto;
+}
+
+form {
+    border: 1px solid black;
+    text-align: center;
+    width: 50%;
+    margin: 2vh auto;
+    background-color: #ffc640;
+}
+
+form div {
+    margin: 1.5em;
+}
+
+form button {
+    margin: 1em;
+}
+
+form p {
+    margin: 2% auto;
+}
+
+form label {
+    color: #611a02;
+    font-size: 1.75;
+    font-weight: bold;
+}
+
+/* section{
+    margin: 2%;
+} */
+
+#button {
+    font-size: 1.1em;
+    background-color: #386C0B;
+    color:#FAFF70;
+    height:50px;
+    padding: 0.3em 0.5em;
+    border-color: #BAAB68;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    border:solid; 
+    display: block;
+    margin: auto auto 2vh auto;
+}
+
+#button:hover {
+    color:#386C0B;
+    background-color: #FAFF70;
+}
+
+/* FOOTER */
+footer {
+    background-color: #7e1011;
+    position: relative;
+    bottom: 0px;
+    /* margin-bottom: 2em; */
+}
+
+footer .page-wrapper {
+    padding: 1em 0em;
+}
+
+footer p {
+    font-size: 1.5em;
+    color:#ffc640;
+    text-align: left;
+    font-family: 'Karma', serif;
+}
+

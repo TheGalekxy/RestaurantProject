@@ -1,0 +1,43 @@
+ <h3>E-Gift Card</h3>
+ 
+            <div><label>To:<span id="nameTo"></span></label></div>
+                <div>
+                <label for="ToFirstName">First Name:</label>
+                     <input type="text" id="ToFirstName" name="To_First_Name" placeholder="First Name">
+                <label for="ToLastName">Last Name:</label>
+                    <input type="text" id="ToLastName" name="To_LastLast_Name" placeholder="Last Name">
+                </div>
+            </div>
+
+            <div><label>From:<span id="nameFrom"></span></label></div>
+            <div>
+                <div>
+                <label for="FromFirstName">First Name:</label>
+                    <input type="text" id="FromFirstName" name="From_First_Name" placeholder="First Name">
+                <label for="FromLastName">First Name:</label>
+                    <input type="text" id="FromLastName" name="From_Last_Name" placeholder="Last Name">
+                </div>
+            </div>
+             <div>
+                <label for="email">Your E-mail: <span id="email_msg_from""></label>
+                <input type="text" id="email" name="email_From" placeholder="abc@gmail.com">
+            </div> 
+
+            <div>
+                <label for="emailTO">Recipient's E-mail: <span id="email_msg_to"></label>
+                <input type="text" id="emailTO" name="email_To" placeholder="abc@gmail.com">
+            </div> 
+        
+            <div>
+                <label for="message">Message:</label>
+            </div>
+            <div>
+            <textarea id="message" name="message" rows="4" cols="36" placeholder="What would you like the message to be?"></textarea>
+            </div>
+
+            
+            <div>
+                 <input type="submit" value="Submit">
+            </div>
+          
+     

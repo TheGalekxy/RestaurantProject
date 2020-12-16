@@ -1,0 +1,35 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 74.8vh;
+}
+main ul {
+  padding-left: 0px;
+  margin-top: 0px;
+}
+li {
+  list-style-type: none;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+h3 {
+  font-size: 1.5em;
+}
+.SitemapItem p {
+  display: none;
+  font-size: 1em;
+}
+.SitemapItem a {
+  display: none;
+  color: #ffc640;
+  background-color: #7e1011;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.SitemapItem a:hover{
+  color: #ead489;
+}
+

@@ -1,0 +1,129 @@
+<!-- Restaurant Project - Completed by Group 4A HTTP5103, Humber College, Toronto (Fall 2020).
+    Home Page and Contact Us page completed by: Jalaluddin Qureshi-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Taj Mahal Restaurant</title>
+    <link rel="stylesheet" type="text/css" href="/css/Contact/contact.css">
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header id="header">
+        <div class="page-wrapper">
+        
+        
+            <!-- SLOGAN -->
+            <div id="header-logo">
+                <h2 class="hidden">Company Logo</h2>
+                <a href="/index.html">
+                    <img id="logo" src="/resources/Images/Shared/taj-mahal-full.png">
+                </a>
+            </div>
+            
+            <!-- MAIN NAVIGATION with SIGN IN BUTTON-->
+            
+            <nav id="main-menu">
+                <h3 class="hidden">Main navigation</h3>
+                <ul >
+
+                    <li class="dropdown"><a href="/index.html">Home</a></li>
+
+                    <li class="dropdown"><a href="/pages/aboutus.html">About</a>
+                        <ul class="dropdown-content">
+                            <li class="drop-link"><a href="/pages/aboutus.html">Who we are</a></li>
+                            <li class="drop-link"><a href="/pages/contact.html">Contact</a></li>
+                            <li class="drop-link"><a href="/pages/locations.html">Location</a></li>
+                            <li class="drop-link"><a href="/pages/careers.html">Careers</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="/pages/menu.html">Dining Experience</a>
+                        <ul class="dropdown-content">
+                        <li class="drop-link"><a href="/pages/menu.html">Menu</a></li>
+                        <li class="drop-link"><a href="/pages/specials.html">Weekly Specials</a></li>
+                        <li class="drop-link"><a href="/pages/events.html">Events Booking</a></li>
+                        <li class="drop-link"><a href="/pages/GiftCards.html">Gift Cards</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"><a href="/pages/sitemap.html">Site Map</a></li>
+                    <li class="dropdown"><a href="/pages/contest.html">Contests</a></li>
+
+                </ul>
+            </nav>
+            
+        </div>
+    </header>
+      
+    <!-- THE MAIN CONTENT OF THE CONTACT US PAGE -->
+    <div class="page-wrapper">
+        
+        <main>
+            
+            <h1 class="hidden">Contact Taj Mahal Restaurant</h1>
+            
+            <!--FORM -->
+            <form action="#" method="post" id="contactUs" name="formContact">
+                <fieldset >
+                    <legend>Contact Us</legend>
+                    
+                    <p id="thanks_msg"></p>
+                    
+                    <!--The portion under the di is hidden when the user successfully submit the form-->
+                    <div id="activeform">
+                        <img src="/resources/Images/Contact/chat.png" id="contacticon">
+                        <h3>We would love to hear from you.</h3>
+
+                        <!-- Name -->
+                        <p><label for="in_Name">Your Name:</label>
+                            <input type="text" id="in_Name" name="f_Name"/>
+                            <span id="NameError" class="error"></span>
+                        </p>
+
+                        <!-- Email -->
+                        <p><label for="in_Email">Email Address:</label>
+                            <input type="text" id="in_Email" name="Email"/>
+                            <span id="EmailError" class="error"></span>
+                        </p>
+
+                        <!-- Telephone -->
+                        <p><label for="in_Tel">Telephone Number:</label>
+                            <input type="text" id="in_Tel" name="Tel"/>
+                            <span id="TelError" class="error"></span>
+                        </p>
+
+
+                        <!-- Message -->
+                        <p><label for="in_Msg">Message:</label>
+                            <input type="text" id="in_Msg" name="Msg"/>
+                            <span id="MsgError" class="error"></span>
+                        </p>
+
+                        <!-- SUBMIT -->
+                        <p id="listSubmit">
+                            <input type="submit" value="Submit" id="button">
+                        </p>   
+                    </div>
+                    
+                </fieldset>
+            </form>
+            
+                
+        </main>
+    </div>
+      
+      
+      
+      
+        <!-- FOOTER -->
+        <footer>
+          <div class="page-wrapper">
+              <h2 class="hidden">Footer navigation</h2>
+              <p>&copy; Copyright Taj Mahal Restaurant, Toronto, Canada. All rights reserved.</p>         
+          </div>
+        </footer>
+    
+    <script type="text/javascript" src="/javascript/contact/contact.js" ></script>  
+  </body>
+</html>

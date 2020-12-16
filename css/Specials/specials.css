@@ -1,0 +1,69 @@
+/*== LAB 9: jQuery ==*/
+body{
+	
+        margin:0;
+        font-family: 'Karma', serif;
+        font-weight: normal;
+        font-size: 1em;
+        line-height: 1.2;
+        background-color:#f5ffff;
+    
+}
+
+h1{
+    color:#611a02; 
+    margin: 4vh 0px 0px 150px;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family:'Ubuntu', sans-serif;
+    color:#611a02; 
+}
+
+p{
+    font-size:1.3em;
+    color: #220e00;
+	margin-top: 0;
+	padding-top: 0;
+}
+dt{
+    font-weight: bold;
+    color:#611a02;
+}
+dd{
+    color:#611a02;
+}
+
+#mainContain {
+	background-color:#f5ffff;
+	width: 80%;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+
+.contentBox{
+	background:#f5ffff;/*Paragraph background color*/
+	padding: 15px;
+	color:#611a02; /*Paragraph font colour*/
+}
+.contentBox:hover{
+    background-color: #fcf2ee;
+}
+.nameOfFood{
+    font-weight: bold;
+}
+
+/*Text Panel Styling*/
+.panelContainer{
+	background-color:#f5ffff;
+	width: 80%;
+	margin: 0 auto;
+}
+
+main {
+    min-height: 70.8vh;
+}
+
+footer p {
+    margin: 24px 0px;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Gift Card</title>
+        <meta name="Gift Cards" content="Buy your friends gift cards">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="/javascript/giftcards/GiftCard.Js"></script>
+        <link rel="stylesheet" href="/css/GiftCards/giftcard.css" />
+        <!--<link rel="stylesheet" href="">-->
+    <style>
+  
+    </style>
+
+        <meta charset="utf-8" />
+    </head>
+
+    <!-- HEADER -->
+    <header id="header">
+        <div class="page-wrapper">
+        
+        
+            <!-- SLOGAN -->
+            <div id="header-logo">
+                <h2 class="hidden">Company Logo</h2>
+                <a href="/index.html">
+                    <img id="logo" src="/resources/Images/Shared/taj-mahal-full.png">
+                </a>
+            </div>
+            
+            <!-- MAIN NAVIGATION with SIGN IN BUTTON-->
+            
+            <nav id="main-menu">
+                <h3 class="hidden">Main navigation</h3>
+                <ul >
+
+                    <li class="dropdown"><a href="/index.html">Home</a></li>
+
+                    <li class="dropdown"><a href="/pages/aboutus.html">About</a>
+                        <ul class="dropdown-content">
+                            <li class="drop-link"><a href="/pages/aboutus.html">Who we are</a></li>
+                            <li class="drop-link"><a href="/pages/contact.html">Contact</a></li>
+                            <li class="drop-link"><a href="/pages/locations.html">Location</a></li>
+                            <li class="drop-link"><a href="/pages/careers.html">Careers</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="/pages/menu.html">Dining Experience</a>
+                        <ul class="dropdown-content">
+                        <li class="drop-link"><a href="/pages/menu.html">Menu</a></li>
+                        <li class="drop-link"><a href="/pages/specials.html">Weekly Specials</a></li>
+                        <li class="drop-link"><a href="/pages/events.html">Events Booking</a></li>
+                        <li class="drop-link"><a href="/pages/GiftCards.html">Gift Cards</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"><a href="/pages/sitemap.html">Site Map</a></li>
+                    <li class="dropdown"><a href="/pages/contest.html">Contests</a></li>
+
+                </ul>
+            </nav>
+            
+        </div>
+    </header>
+
+    <body>
+        <main>
+            <div class="page-wrapper">
+            
+                <div id="gift-card-container">
+                   
+                    <form id="displayform" name="myFormSpot">
+                        <h3 id="gc-h3">E-Gift Card</h3>
+                        <div>
+                            <div><h4>We have gift cards of any denomination! Lets make someone special happy! </h4>
+                                <h4>Due to COVID-19 all of our gift card will be E-Gift Cards</h4>
+                            </div>
+    
+                            <select required name="CardAmount" id="CardAmount" value="Select">
+                            <option value="" disabled selected>Select Amount</option>
+                            <option value="25">$25.00</option>
+                            <option value="50">$50.00</option>
+                            <option value="75">$75.00</option>
+                            <option value="100">$100.00</option>
+                            <option value="150">$150.00</option>
+                            <option value="200">$200.00</option>
+                            <option value="custom">Custom...</option>
+                            </select>
+                        </div>
+                        <div><span id="nameTo"></span><br>
+                                <input type="text" id="ToFirstName" name="To_First_Name" placeholder="To(First Name)"> 
+                                <input type="text" id="ToLastName" name="To_LastLast_Name" placeholder="To(Last Name)">
+                       </div>
+            
+                        <div><span id="nameFrom"></span><br>
+                                <input type="text" id="FromFirstName" name="From_First_Name" placeholder="From(First Name)">
+                                <input type="text" id="FromLastName" name="From_Last_Name" placeholder="From(Last Name)">
+                        </div>
+                        
+                        <div>
+                            <span id="email_msg_from"></span><br>
+                            <input type="text" id="email" name="email_From" placeholder="From(e-mail)">
+                        </div> 
+            
+                        <div>
+                            <span id="email_msg_to"></span><br>
+                            <input type="text" id="emailTO" name="email_To" placeholder="To(e-mail)">
+                        </div> 
+                
+                        <div>
+                            <label for="message" class="title-of-inputs">Message:</label>
+                        </div>
+                        <div>
+                        <textarea id="message" name="message" rows="4" cols="36" placeholder="What would you like the message to be?"></textarea>
+                        </div>
+            
+                        
+                        <div>
+                            <input type="submit" value="Submit" id="submitBtn">
+                        </div>
+                    </form>
+                </div>
+            </div>    
+        </main>
+        
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="page-wrapper">
+            <p>&copy; Copyright Taj Mahal Restaurant, Toronto, Canada. All rights reserved.</p>         
+        </div>
+    </footer>
+
+    </body>
+
+</html>
