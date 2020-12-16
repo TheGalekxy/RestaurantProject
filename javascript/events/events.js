@@ -48,8 +48,9 @@ window.onload = function() {
             nameElement.style.background = "";
         }
 
-		// Check to see if a the customer id has been inputed
-		if(emailValue === "" || emailValue === null){ 
+        // Check to see if a the customer id has been inputed
+        let myRegEx = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/; // BORROWED FROM ASIA :D
+		if(!myRegEx.test(formInfo.email)){ 
 			emailElement.style.background = "red";
 			emailElement.focus();
 			return false;
@@ -58,7 +59,7 @@ window.onload = function() {
             emailElement.style.background = "";
         }
 
-		// Check to see if the postal code has been inputed
+        // Check to see if the postal code has been inputed
 		if(phoneValue === "" || phoneValue === null){ 
 			phoneElement.style.background = "red";
 			phoneElement.focus();
